@@ -211,8 +211,8 @@ a {
     border-radius: inherit;
 }
 
-.hero-form__error {
-    margin-left: 23px;
+.form__error {
+    margin-left: 12px;
     margin-top: 6px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -220,7 +220,8 @@ a {
     visibility: hidden;
 }
 
-.hero__form:has(:invalid:not(:placeholder-shown)) ~ .hero-form__error {
+.hero__form:has(:invalid:not(:placeholder-shown)) ~ .form__error,
+.footer__form:has(:invalid:not(:placeholder-shown)) ~ .form__error {
     visibility: visible;
 }
 
@@ -965,7 +966,7 @@ a {
 }
 
 .footer__row {
-    margin-top: 54px;
+    margin-top: 32px;
     display: flex;
     column-gap: 100px;
 }
